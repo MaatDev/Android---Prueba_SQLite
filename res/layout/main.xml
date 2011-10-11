@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<TextView  
+	android:id="@+id/tv_text"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+    
+    <TextView  
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Código: "
+    />
+    
+    <EditText 
+    android:id="@+id/et_codigo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"    
+    />
+    
+    <TextView  
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Nombre: "
+    />
+    
+    <EditText 
+    android:id="@+id/et_nombre"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:singleLine="true"    
+    />
+    
+    <Button 
+    android:id="@+id/btn_insert"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Guardar"
+    android:onClick="insert"   
+    
+     
+    />
+    
+    <Button 
+    android:id="@+id/btn_select"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Leer"
+    android:onClick="select"    
+    />
+     <!-- Es otra forma de onClickListener  -->
+     
+    <Button 
+    android:id="@+id/btn_delete"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Borrar"
+    android:onClick="delete"    
+    />
+    
+    <Button 
+    android:id="@+id/btn_update"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Actualizar"
+    android:onClick="update"    
+    />
+    
+</LinearLayout>
+
+</ScrollView>
